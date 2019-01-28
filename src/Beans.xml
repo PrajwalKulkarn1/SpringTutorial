@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="helloWorld" class="in.moneyview.HelloWorld">
+
+        <property name="addressSet">
+            <set>
+                <value>India</value>
+                <value>Pakistan</value>
+                <value>Germany</value>
+                <value>Portugal</value>
+                <value>Spain</value>
+            </set>
+        </property>
+
+        <property name="addressList">
+            <list>
+                <value>India</value>
+                <value>Pakistan</value>
+                <value>Germany</value>
+                <value>Portugal</value>
+                <value>Spain</value>
+            </list>
+        </property>
+
+        <property name="addressMap">
+            <map>
+                <entry key="1" value="India"></entry>
+                <entry key="2" value="Pakistan"></entry>
+                <entry key="3" value="Germany"></entry>
+                <entry key="4" value="Portugal"></entry>
+                <entry key="5" value="Spain"></entry>
+            </map>
+        </property>
+
+        <property name="address">
+            <props>
+                <prop key="1">India</prop>
+                <prop key="2">Pakistan</prop>
+                <prop key="3">Germany</prop>
+                <prop key="4">Portugal</prop>
+                <prop key="5">Spain</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
